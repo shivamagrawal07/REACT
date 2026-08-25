@@ -1,12 +1,13 @@
-/*
+
 function customRender(reactElement, container){
+    /*
     const domElement = document.createElement(reactElement.type)
     domElement.innerHTML = reactElement.children
     domElement.setAttribute('href', reactElement.props.href)
     domElement.setAttribute('target', reactElement.props.target)
 
-    container.appendchild(domElement)  
-}*/
+    container.appendchild(domElement)
+    */
 
     const domElement = document.createElement(reactElemnent.type)
     domElement.innerHTML = reactElemnent.children
@@ -14,6 +15,7 @@ function customRender(reactElement, container){
         domElement.setAttribute(Prop, reactElemnent.props[prop])
     }
     mainContainer.appendChild(domElement)
+}
 const reactElemnent ={
     type: 'a',
     props: {
